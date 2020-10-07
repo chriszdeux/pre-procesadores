@@ -1,0 +1,28 @@
+//- -var numeros = 0
+
+//- ul
+//-     while numeros < 10
+//-         li= numeros++
+
+//remove comments ctrl +k ctrl + u
+//- -var cantidad = 1
+//- while cantidad <= 20
+//-     .caja
+//-         .caja__imagen: img(src="images/imagen.png", alt="")
+//-         .caja__contenido
+//-             h3 caja numero #{cantidad++}
+
+//- -var random = Math.floor(Math.random() * 10)
+//- if random > 5
+//-     h3 el numero fue #{random}
+//- else
+//-     h3 el numero #{random} fue menor a 5 
+
+-var cont = 0
+    while cont < 10
+        - var randomNumbers = Math.floor(Math.random () * 20) + 1
+        .caja
+            .caja__contenido
+                h3 numero #{randomNumbers, cont++}
+       
+        
